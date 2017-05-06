@@ -1,0 +1,12 @@
+﻿@model JobBoard.Models.ViewModels.JobPostListVM
+@{
+    ViewBag.Title = "JobPostings";
+}
+
+<h2>JobPostings</h2>
+@foreach (var item in Model.JobPostList)
+{
+    <h1>@item.Title</h1>
+}
+
+

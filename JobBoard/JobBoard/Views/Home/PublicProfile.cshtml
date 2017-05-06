@@ -1,10 +1,10 @@
-﻿
+﻿@model JobBoard.Models.ViewModels.PublicProfileVM
 @{
     Layout = "~/Views/Shared/_Companylayout.cshtml";
     ViewBag.Title = "PublicProfile";
 }
 
-<h1>@ViewBag.Id</h1>
+<h1>@Model.User.Name</h1>
 
 <!-- Portfolio Grid Section -->
 <section id="portfolio">
