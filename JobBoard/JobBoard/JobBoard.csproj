@@ -187,6 +187,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Domain\JobPostDomain.cs" />
+    <Compile Include="Models\Domain\ProfileDomain.cs" />
     <Compile Include="Models\Domain\SkillDomain.cs" />
     <Compile Include="Models\Domain\UserDomain.cs" />
     <Compile Include="Models\Responses\BaseResponseModel.cs" />
@@ -328,6 +329,10 @@
     <Content Include="ZipJobBoard\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="ZipJobBoard\vendor\font-awesome\scss\_variables.scss" />
     <Content Include="Views\Home\PublicProfile.cshtml" />
+    <Content Include="Views\Home\CompanyProfile.cshtml" />
+    <Content Include="Views\Home\UserDashboard.cshtml" />
+    <Content Include="Views\Home\Userjobs.cshtml" />
+    <Content Include="Views\Home\Skills.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

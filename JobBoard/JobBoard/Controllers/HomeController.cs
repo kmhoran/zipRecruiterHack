@@ -35,5 +35,31 @@ namespace JobBoard.Controllers
             ViewBag.Id = id;
             return View();
         }
+
+
+        public ActionResult CompanyProfile()
+        {
+
+            return View();
+        }
+
+        public ActionResult UserDashboard()
+        {
+
+            return View();
+        }
+
+        public ActionResult Userjobs()
+        {
+
+            return View();
+        }
+
+
+        public ActionResult Skills()
+        {
+
+            return View();
+        }
     }
 }
