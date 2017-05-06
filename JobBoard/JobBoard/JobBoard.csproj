@@ -193,10 +193,6 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\FontAwesome\font-awesome.css" />
-    <Content Include="Content\FontAwesome\font-awesome.min.css" />
-    <Content Include="Content\Theme\freelancer.css" />
-    <Content Include="Content\Theme\freelancer.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -220,10 +216,7 @@
     <Content Include="Scripts\Theme\freelancer.js" />
     <Content Include="Scripts\Theme\freelancer.min.js" />
     <Content Include="Scripts\Theme\jqBootstrapValidation.js" />
-    <Content Include="Scripts\Theme\jquery.easing.compatibility.js" />
-    <Content Include="Scripts\Theme\jquery.easing.js" />
     <Content Include="Scripts\Theme\jquery.easing.min.js" />
-    <Content Include="Scripts\Theme\tether.js" />
     <Content Include="Scripts\Theme\tether.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Shared\template_index.html" />
@@ -265,6 +258,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\FontAwesome\" />
+    <Folder Include="Content\Theme\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
