@@ -49,7 +49,7 @@ namespace JobBoard.Controllers
             return View();
         }
 
-        public ActionResult Userjobs()
+        public ActionResult UserJobs()
         {
 
             return View();

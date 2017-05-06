@@ -331,7 +331,7 @@
     <Content Include="Views\Home\PublicProfile.cshtml" />
     <Content Include="Views\Home\CompanyProfile.cshtml" />
     <Content Include="Views\Home\UserDashboard.cshtml" />
-    <Content Include="Views\Home\Userjobs.cshtml" />
+    <Content Include="Views\Home\UserJobs.cshtml" />
     <Content Include="Views\Home\Skills.cshtml" />
   </ItemGroup>
   <ItemGroup>
