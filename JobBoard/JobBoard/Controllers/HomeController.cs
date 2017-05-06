@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Http;
 using System.Web.Mvc;
 
 namespace JobBoard.Controllers
@@ -10,6 +11,7 @@ namespace JobBoard.Controllers
     {
         public ActionResult Index()
         {
+            
             return View();
         }
 
@@ -23,6 +25,39 @@ namespace JobBoard.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+
+        public ActionResult PublicProfile([FromUri] int id)
+        {
+            ViewBag.Id = id;
+            return View();
+        }
+
+
+        public ActionResult CompanyProfile()
+        {
+
+            return View();
+        }
+
+        public ActionResult UserDashboard()
+        {
+
+            return View();
+        }
+
+        public ActionResult Userjobs()
+        {
+
+            return View();
+        }
+
+
+        public ActionResult Skills()
+        {
 
             return View();
         }
