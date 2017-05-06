@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Sabio.Web.Models.Responses
+namespace JobBoard.Models.Responses
 {
     /// <summary>
     /// This class simply sets IsSuccesful to true by default.

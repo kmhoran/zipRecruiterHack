@@ -72,3 +72,4 @@ C:\SF.Code\zipHack\Hack-Team-01\zipRecruiterHack\JobBoard\JobBoard\bin\Microsoft
 C:\SF.Code\zipHack\Hack-Team-01\zipRecruiterHack\JobBoard\JobBoard\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\SF.Code\zipHack\Hack-Team-01\zipRecruiterHack\JobBoard\JobBoard\obj\Debug\JobBoard.dll
 C:\SF.Code\zipHack\Hack-Team-01\zipRecruiterHack\JobBoard\JobBoard\obj\Debug\JobBoard.pdb
+C:\SF.Code\zipHack\Hack-Team-01\zipRecruiterHack\JobBoard\JobBoard\obj\Debug\JobBoard.csprojResolveAssemblyReference.cache
