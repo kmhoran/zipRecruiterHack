@@ -1,0 +1,11 @@
+.codeSamples img {
+    border: solid;
+}
+
+.codeSamples {
+    padding-top: 20px;
+}
+
+.codeSamples span {
+    color: grey;
+}
