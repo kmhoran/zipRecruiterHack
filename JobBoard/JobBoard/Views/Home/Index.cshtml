@@ -1,140 +1,202 @@
 ﻿@{
-     Layout = "~/Views/Shared/_SeekerLayout.cshtml";
-     ViewBag.Title = "Home Page";
- 
- }
- @section Meta{
-     <style>
-         .content {
-             position: relative;
-             left: 5em;
-             margin-right: 10em;
-         }
- 
-         .profile-picture {
-             width: 15em;
-         }
+    Layout = "~/Views/Shared/_SeekerLayout.cshtml";
+    ViewBag.Title = "Home Page";
 
-         .accolades {
-             position: relative;
-             left: -1em;
-         }
- 
-         .leader-board-tab{
-             padding: 0.5em;
-         }
- 
-         .leader-board-item:nth-child(even){
-             background-color: #efefef;
-         }
- 
-         .leader-board-item{
-             margin: 0.5em;
-             width: 100%;
-             padding: 0.1em;
-         }
- 
-         .leader-board-img{
-             width: 3em;
-             border-radius: 100%;
-             display: inline;
-         }
-         .leader-board-item p{
-             display: inline-block;
-             margin-left: 5em;
-         }
-     </style>
- }
- 
- <div class="content">
- 
- 
-     <div class="col-lg-6">
-         <div>
-             <h3>Pedro Ramirez</h3>
-             <img src="https://s3.amazonaws.com/37assets/svn/1065-IMG_2529.jpg" class="img-responsive profile-picture" alt="Profile Picture" width="300px" height="300px">
-             <div class="col-sm-10 bio">
-                 <br>
- 
-                 <div class="accolades">
- 
-                     <img src="https://www.codementor.io/assets/page_img/learn-javascript.png" width="40px" height="40px">
-                     <img src="http://www.iconhot.com/icon/png/coded/512/page-php.png" width="40px" height="40px">
-                     <img src="https://cdn.codementor.io/assets/tutors/c-sharp-tutors-online.png" width="40px" height="40px">
-                     <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" width="40px" height="40px">
-                     <img src="http://downloadicons.net/sites/default/files/sql-icon-13494.png" width="40px" height="40px">
-                 </div>
-             </div>
-         </div>
-     </div>
-     <!-- /.row -->
-     <div class="col-lg-6">
-         <div class="card-box">
-             <h4 class="header-title m-t-0">Weekly Burndown</h4>
- 
-             <canvas id="lineChart" height="300"></canvas>
-         </div>
-         <!-- /.graph -->
-         <div class="panel panel-default">
-             <div class="panel-body">
-                 <h2> Leader Board</h2>
-                 <hr />
-                 <ul class="nav nav-tabs">
-                     <li class="active"><a data-toggle="tab" href="#this-week">This Week</a></li>
-                     <li><a data-toggle="tab" href="#all-time">All Time</a></li>
-                 </ul>
- 
-                 <div class="tab-content">
-                     <div id="this-week" class="leader-board-tab tab-pane fade in active">
-                         <div class="leader-board-item">
-                             <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/e0/88/50/e08850b4-83e6-7aae-55a8-fa7adeee491b/source/256x256bb.jpg" class="img-responsive leader-board-img" alt="Profile Picture">
-                             <a href="#"><p>Liliana Monge</p></a>
-                             <p>500 XP</p>
-                         </div>
-                         <!-- /.leader-board-item -->
-                         <div class="leader-board-item">
-                             <img src="https://s3.amazonaws.com/37assets/svn/1065-IMG_2529.jpg" class="img-responsive leader-board-img" style="border:2px solid #18BC9C" alt="Profile Picture">
-                             <a href="/Home/PubliicProfile"><p>Pedro Ramirez</p></a>
-                             <p>471 XP</p>
-                         </div>
-                         <!-- /.leader-board-item -->
-                         <div class="leader-board-item">
-                             <img src="http://static.wixstatic.com/media/9c82c3_ef3fcdba56df407abc0b0e26baf3bccf~mv2.jpg_256" class="img-responsive leader-board-img" alt="Profile Picture">
-                             <a href="#"><p>Gregorio Rojas</p></a>
-                             <p>347 XP</p>
-                         </div>
-                         <!-- /.leader-board-item -->
- 
-                     </div>
-                     <div id="all-time" class="leader-board-tab tab-pane fade">
-                         <div class="leader-board-item">
-                             <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/e0/88/50/e08850b4-83e6-7aae-55a8-fa7adeee491b/source/256x256bb.jpg" class="img-responsive leader-board-img" alt="Profile Picture">
-                             <a href="#"><p>Liliana Monge</p></a>
-                             <p>30105 XP</p>
-                         </div>
-                         <!-- /.leader-board-item -->
-                         <div class="leader-board-item">
-                             <img src="http://static.wixstatic.com/media/9c82c3_ef3fcdba56df407abc0b0e26baf3bccf~mv2.jpg_256" class="img-responsive leader-board-img" alt="Profile Picture">
-                             <a href="#"><p>Gregorio Rojas</p></a>
-                             <p>17523 XP</p>
-                         </div>
-                         <!-- /.leader-board-item -->
-                         <div class="leader-board-item">
-                             <img src="https://s3.amazonaws.com/37assets/svn/1065-IMG_2529.jpg" class="img-responsive leader-board-img" style="border:2px solid #18BC9C" alt="Profile Picture">
-                             <a href="/Home/PubliicProfile"><p>Pedro Ramirez</p></a>
-                             <p>10845 XP</p>
-                         </div>
-                         <!-- /.leader-board-item -->
-                     </div>
-                 </div>
-             </div>
-             <!-- /. panel-body -->
-         </div>
-         <!-- /.panel -->
-     </div>
- </div>
- 
- @section Scripts{
-     <script src="~/Scripts/ChartJs/chart.min.js"></script>
-     <script src="~/Scripts/ChartJs/jquery.chartjs.init.js"></script>
+}
+@section Meta{
+    <style>
+        .content {
+            position: relative;
+            left: 5em;
+            margin-right: 10em;
+        }
+
+        .profile-picture {
+            width: 15em;
+        }
+
+        .accolades {
+            position: relative;
+            left: -1em;
+        }
+
+        .courses{
+            text-align: center;
+            position:relative;
+            left: -2em;
+        }
+
+        .courses img{
+            width: 5em;
+        }
+        .other-courses{
+            display: inline-block;
+        }
+        .other-courses a{
+            margin: 1em;
+        }
+
+        .card-box {
+            margin-bottom: 1em;
+        }
+
+        .leader-board-tab {
+            padding: 0.5em;
+        }
+
+        .leader-board-item:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+
+        .leader-board-item {
+            margin: 0.5em;
+            width: 100%;
+            padding: 0.3em;
+        }
+
+        .leader-board-img {
+            width: 3em;
+            border-radius: 100%;
+            display: inline;
+        }
+
+        .leader-board-item p {
+            display: inline-block;
+            margin-left: 5em;
+        }
+    </style>
+}
+
+<div class="content">
+   
+    <div class="col-lg-6">
+        <div class="row">
+            <h3>Pedro Ramirez</h3>
+            <a href="/Home/PublicProfile"><img src="https://s3.amazonaws.com/37assets/svn/1065-IMG_2529.jpg" class="img-responsive profile-picture" alt="Profile Picture" width="300px" height="300px" /></a>
+            <div class="col-sm-10 bio">
+                <br>
+
+                <div class="accolades">
+
+                    <img src="https://www.codementor.io/assets/page_img/learn-javascript.png" width="40px" height="40px">
+                    <img src="http://www.iconhot.com/icon/png/coded/512/page-php.png" width="40px" height="40px">
+                    <img src="https://cdn.codementor.io/assets/tutors/c-sharp-tutors-online.png" width="40px" height="40px">
+                    <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" width="40px" height="40px">
+                    <img src="http://downloadicons.net/sites/default/files/sql-icon-13494.png" width="40px" height="40px">
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="col-md-10">
+            <div class="panel panel-default courses">
+                <div class="panel-heading">
+                    <h3>Courses</h3>
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <h4>Continue Learning</h4>
+                    <img src="https://www.codementor.io/assets/page_img/learn-javascript.png">
+                    <p>JavaScript the Hard Way</p>
+                    <button class="btn btn-success btn-lg">GO</button>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item other-courses">
+                        <button class="btn btn-default">Browse JavaScript Jobs in Your Area</button>
+                        </li>
+<li class="list-group-item other-courses">
+                        <a href="#">Java Jiu Jitsu</a>
+                        <a href="#">SQL Essentials</a>
+                        <a href="/Home/Skills">View All Courses</a>
+                    </li>
+                </ul>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+    </div>
+    <!-- /.col-lg-6 -->
+
+
+    <div class="col-lg-6">
+        <div class="card-box">
+            <h4 class="header-title m-t-0">Weekly Burndown</h4>
+
+            <canvas id="lineChart" height="300"></canvas>
+        </div>
+        <!-- /.graph -->
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h2> Leader Board</h2>
+                <hr />
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#this-week">This Week</a></li>
+                    <li><a data-toggle="tab" href="#all-time">All Time</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="this-week" class="leader-board-tab tab-pane fade in active">
+                        <div class="leader-board-item">
+                            <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/e0/88/50/e08850b4-83e6-7aae-55a8-fa7adeee491b/source/256x256bb.jpg" class="img-responsive leader-board-img" alt="Profile Picture">
+                            <a href="#"><p>Liliana Monge</p></a>
+                            <p>500 XP</p>
+                        </div>
+                        <!-- /.leader-board-item -->
+                        <div class="leader-board-item">
+                            <img src="https://s3.amazonaws.com/37assets/svn/1065-IMG_2529.jpg" class="img-responsive leader-board-img" style="border:2px solid #18BC9C" alt="Profile Picture">
+                            <a href="/Home/PublicProfile"><p>Pedro Ramirez</p></a>
+                            <p>471 XP</p>
+                        </div>
+                        <!-- /.leader-board-item -->
+                        <div class="leader-board-item">
+                            <img src="http://static.wixstatic.com/media/9c82c3_ef3fcdba56df407abc0b0e26baf3bccf~mv2.jpg_256" class="img-responsive leader-board-img" alt="Profile Picture">
+                            <a href="#"><p>Gregorio Rojas</p></a>
+                            <p>347 XP</p>
+                        </div>
+                        <!-- /.leader-board-item -->
+                        <div class="leader-board-item">
+                            <img src="http://i2.kym-cdn.com/entries/icons/facebook/000/000/128/slowpoke_pokemon.jpg" class="img-responsive leader-board-img" alt="Profile Picture">
+                            <a href="#"><p>Stephen Smith</p></a>
+                            <p>100 XP</p>
+                        </div>
+                        <!-- /.leader-board-item -->
+
+                    </div>
+                    <div id="all-time" class="leader-board-tab tab-pane fade">
+                        <div class="leader-board-item">
+                            <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/e0/88/50/e08850b4-83e6-7aae-55a8-fa7adeee491b/source/256x256bb.jpg" class="img-responsive leader-board-img" alt="Profile Picture">
+                            <a href="#"><p>Liliana Monge</p></a>
+                            <p>30105 XP</p>
+                        </div>
+                        <!-- /.leader-board-item -->
+                        <div class="leader-board-item">
+                            <img src="http://static.wixstatic.com/media/9c82c3_ef3fcdba56df407abc0b0e26baf3bccf~mv2.jpg_256" class="img-responsive leader-board-img" alt="Profile Picture">
+                            <a href="#"><p>Gregorio Rojas</p></a>
+                            <p>17523 XP</p>
+                        </div>
+                        <!-- /.leader-board-item -->
+                        <div class="leader-board-item">
+                            <img src="https://s3.amazonaws.com/37assets/svn/1065-IMG_2529.jpg" class="img-responsive leader-board-img" style="border:2px solid #18BC9C" alt="Profile Picture">
+                            <a href="/Home/PublicProfile"><p>Pedro Ramirez</p></a>
+                            <p>10845 XP</p>
+                        </div>
+                        <!-- /.leader-board-item -->
+                        <div class="leader-board-item">
+                            <img src="http://i2.kym-cdn.com/entries/icons/facebook/000/000/128/slowpoke_pokemon.jpg" class="img-responsive leader-board-img" alt="Profile Picture">
+                            <a href="#"><p>Stephen Smith</p></a>
+                            <p>10000 XP</p>
+                        </div>
+                        <!-- /.leader-board-item -->
+                    </div>
+                </div>
+            </div>
+            <!-- /. panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/Scripts/ChartJs/chart.min.js"></script>
+    <script src="~/Scripts/ChartJs/jquery.chartjs.init.js"></script>
+
 }
