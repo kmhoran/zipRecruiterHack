@@ -1,0 +1,88 @@
+﻿@{
+    Layout = "~/Views/Shared/_SeekerLayout.cshtml";
+    ViewBag.Title = "Home Page";
+
+}
+@section Meta{
+<style>
+    .content {
+        position: relative;
+        left: 5em;
+        margin-right: 10em;
+    }
+</style>
+}
+
+<div class="content">
+
+<<<<<<< HEAD
+=======
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <h4>Create a Profile to Display Your Skills</h4>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 portfolio-item row">
+                        
+                        <div style="color: lightgrey">
+                        <h1>Pedro Ramirez</h1>
+                        <img src="img/profileSample.jpg" class="img-responsive" alt="Cabin">
+                        <div class="col-sm-10">
+                            <h1>Biography</h1>
+                            <p>I am a back-end dev with a degree in Computer Science</p>
+                            <h1>Experience</h1>
+                            <p>I have one year experience working in back end development</p>
+                        </div>
+                        </div>
+                </div>
+                <div class="col-sm-6 portfolio-item row">
+                    
+                    <div style="color: lightgrey">
+                    <h2>Top 3 Code Samples</h2>
+                    <div class="col-sm-10">
+                        <p>Java</p>
+                        <img src="http://fabacademy.org/archives/2012/students/chibire.terence/images/samplecode_1.PNG" class="img-responsive"><hr>
+                        <p>PHP</p>
+                        <img src="http://www.tapkaa.com/wp-content/uploads/2013/02/Sample-Pre-Paid-SIM-Card-Class-to-teach-C++-Inheritance.png" class="img-responsive"><hr>
+                        <p>C#</p>
+                        <img src="https://www.phpclasses.org/browse/view/image/format/screenshot/file/36680/name/paypal-php-class-library-get-balance-code-sample.jpg" class="img-responsive">
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div style="color: lightgrey">
+                    <h1>Accolades</h1>
+                    <button class="btn btn-disabled phpAcc">PHP</button>
+                    <button class="btn btn-disabled rubyAcc">Ruby</button>
+                    <button class="btn btn-disabled">C#</button>
+                    <button class="btn btn-disabled">HTML</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+>>>>>>> d087e46eb8a221da568879a58f49cc1bb450c908
+
+    <!-- end row -->
+
+
+    <div class="col-lg-6"></div>
+        <div class="col-lg-6">
+            <div class="card-box">
+                <h4 class="header-title m-t-0">Weekly Burndown</h4>
+
+                <canvas id="lineChart" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+
+@section Scripts{
+    <script src="~/Scripts/ChartJs/chart.min.js"></script>
+    <script src="~/Scripts/ChartJs/jquery.chartjs.init.js"></script>
+}
