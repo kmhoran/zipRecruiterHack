@@ -65,6 +65,12 @@ namespace JobBoard.Controllers
             return View();
         }
 
+        public ActionResult Forum()
+        {
+
+            return View();
+        }
+
         public ActionResult JobPostings()
         {
             JobPostListVM vm = new JobPostListVM { JobPostList = PostService.GetAllJobPosts() };

@@ -339,7 +339,7 @@
     <Content Include="Views\Home\PublicProfile.cshtml" />
     <Content Include="Views\Home\CompanyProfile.cshtml" />
     <Content Include="Views\Home\UserDashboard.cshtml" />
-    <Content Include="Views\Home\Userjobs.cshtml" />
+    <Content Include="Views\Home\Forum.cshtml" />
     <Content Include="Views\Home\Skills.cshtml" />
     <Content Include="Views\Shared\_SeekerLayout.cshtml" />
     <Content Include="Views\Home\CodeTest.cshtml" />
