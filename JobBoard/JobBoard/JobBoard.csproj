@@ -212,11 +212,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\Ace\ace.js" />
+    <Content Include="Scripts\Ace\show_own_source.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\ChartJs\chart.min.js" />
+    <Content Include="Scripts\ChartJs\jquery.chartjs.init.js" />
     <Content Include="ZipJobBoard\.gitignore" />
     <Content Include="ZipJobBoard\css\freelancer.css" />
     <Content Include="ZipJobBoard\css\freelancer.min.css" />
+    <Content Include="ZipJobBoard\css\jobBoard.css" />
     <Content Include="ZipJobBoard\gulpfile.js" />
     <Content Include="ZipJobBoard\img\portfolio\cabin.png" />
     <Content Include="ZipJobBoard\img\portfolio\cake.png" />
@@ -337,6 +342,8 @@
     <Content Include="Views\Home\Skills.cshtml" />
     <Content Include="Views\Shared\_Companylayout.cshtml" />
     <Content Include="Views\Home\JobPostings.cshtml" />
+    <Content Include="Views\Home\CodeTest.cshtml" />
+    <Content Include="Views\Home\Success.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

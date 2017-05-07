@@ -9,3 +9,7 @@
 .codeSamples span {
     color: grey;
 }
+
+.panel-heading img{
+    width: 3em;
+}

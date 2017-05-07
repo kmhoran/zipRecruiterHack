@@ -33,7 +33,7 @@ namespace JobBoard.Controllers
         }
 
 
-        public ActionResult PublicProfile([FromUri] int id)
+        public ActionResult PublicProfile([FromUri] int id=1)
         {
             PublicProfileVM vm = ProfileService.GetProfileVM(id);
             return View(vm);
@@ -70,6 +70,17 @@ namespace JobBoard.Controllers
             JobPostListVM vm = new JobPostListVM { JobPostList = PostService.GetAllJobPosts() };
 
             return View(vm);
+        }
+
+
+        public ActionResult CodeTest()
+        {
+            return View();
+        }
+
+        public ActionResult Success()
+        {
+            return View();
         }
     }
 }
