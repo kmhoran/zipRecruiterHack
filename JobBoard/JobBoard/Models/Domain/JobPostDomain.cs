@@ -9,6 +9,7 @@ namespace JobBoard.Models.Domain
     {
         public int JobPostId { get; set; }
         public DateTime PostingDate { get; set; }
+        public string Company { get; set; }
         public string Title { get; set; }
         public  string Description { get; set; }
         public List<string> Skills { get; set; }

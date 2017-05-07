@@ -1,4 +1,7 @@
-﻿using System;
+﻿using JobBoard.Models.Domain;
+using JobBoard.Models.ViewModels;
+using JobBoard.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -30,10 +33,10 @@ namespace JobBoard.Controllers
         }
 
 
-        public ActionResult PublicProfile([FromUri] int id)
+        public ActionResult PublicProfile([FromUri] int id=1)
         {
-            ViewBag.Id = id;
-            return View();
+            PublicProfileVM vm = ProfileService.GetProfileVM(id);
+            return View(vm);
         }
 
 
@@ -49,7 +52,7 @@ namespace JobBoard.Controllers
             return View();
         }
 
-        public ActionResult Userjobs()
+        public ActionResult UserJobs()
         {
 
             return View();
@@ -59,6 +62,24 @@ namespace JobBoard.Controllers
         public ActionResult Skills()
         {
 
+            return View();
+        }
+
+        public ActionResult JobPostings()
+        {
+            JobPostListVM vm = new JobPostListVM { JobPostList = PostService.GetAllJobPosts() };
+
+            return View(vm);
+        }
+
+
+        public ActionResult CodeTest()
+        {
+            return View();
+        }
+
+        public ActionResult Success()
+        {
             return View();
         }
     }

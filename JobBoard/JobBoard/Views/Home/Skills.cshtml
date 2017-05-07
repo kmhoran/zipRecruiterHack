@@ -1,7 +1,123 @@
 ﻿
 @{
+    Layout = "~/Views/Shared/_SeekerLayout.cshtml";
     ViewBag.Title = "Skills";
 }
+@section Meta{
+    <style type="text/css" media="screen">
+    .ace_editor {
+        border: 1px solid lightgray;
+        margin: auto;
+        height: 200px;
+        width: 80%;
+    }
 
-<h2>Skills</h2>
+    .scrollmargin {
+        height: 80px;
+        text-align: center;
+    }
+</style>
+    }
+
+<div class="row" style="margin-left: 5em;">
+    <h2>Your Skills</h2>
+</div>
+<div class="col-md-6 skills">
+   
+
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <img src="http://developrx.com/wp-content/uploads/2015/09/Unofficial_JavaScript_logo_2.svg_.png" />
+            <h4>Javascript | <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span> </h4>
+            <strong>Level 55</strong>
+        </div>
+        <div class="panel-body">
+            <div class="courses">
+                <h5>Learn</h5>
+                Continue <a href="#"><strong>Javascript the Hard Way</strong></a>. (7/15)
+            </div>
+            <hr />
+            <div class="jobs">
+                <h5>Work</h5>
+                Find Javascript jobs in <a href="#"><strong>Los Angeles</strong></a>.
+            </div>
+            <hr />
+            <div>
+                <h5>Connect</h5>
+                Check out the latest posts in the <a href="#">JS developers</a> forum.
+            </div>
+
+        </div>
+        <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+</div>
+<!-- /.col-md-6 -->
+
+<div class="col-md-6">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <img src="https://raw.githubusercontent.com/abramz/angular-hover-spy-example/master/app/images/angularjs-logo.png" />
+            <h4>AngularJS | <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></h4>
+            <strong>Level 15</strong>
+        </div>
+        <div class="panel-body">
+            <div class="courses">
+                <h5>Learn</h5>
+                Continue <a href="#"><strong>Angular for Dummies</strong></a>. (3/10)
+            </div>
+            <hr />
+            <div class="jobs">
+                <h5>Work</h5>
+                Find AngularJS jobs in <a href="#"><strong>Los Angeles</strong></a>.
+            </div>
+            <hr />
+            <div>
+                <h5>Connect</h5>
+                Check out the latest posts in the <a href="#">Angular4!!!</a> forum.
+            </div>
+
+        </div>
+        <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+
+</div>
+<!-- /.col-md-6 -->
+
+
+<div class="col-md-6">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <img src="https://video-react.js.org/assets/logo.png" />
+            <h4>React | <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></h4>
+            <strong>Level 20</strong>
+        </div>
+        <div class="panel-body">
+            <div class="courses">
+                <h5>Learn</h5>
+                Continue <a href="#"><strong>React Essentials</strong></a>. (5/10)
+            </div>
+            <hr />
+            <div class="jobs">
+                <h5>Work</h5>
+                Find React jobs in <a href="#"><strong>Los Angeles</strong></a>.
+            </div>
+            <hr />
+            <div>
+                <h5>Connect</h5>
+                Check out the latest posts in the <a href="#">ReactJS</a> forum.
+            </div>
+
+        </div>
+        <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+
+</div>
+<!-- /.col-md-6 -->
+@section Scripts{
+    
+    
+    }
 

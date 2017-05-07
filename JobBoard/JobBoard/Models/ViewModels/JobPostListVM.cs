@@ -6,9 +6,8 @@ using System.Web;
 
 namespace JobBoard.Models.ViewModels
 {
-    public class PublicProfileVM
+    public class JobPostListVM
     {
-        public UserDomain User {get; set;}
-        public ProfileDomain Profile { get; set; }
+        public List<JobPostDomain> JobPostList {get; set;}
     }
 }
