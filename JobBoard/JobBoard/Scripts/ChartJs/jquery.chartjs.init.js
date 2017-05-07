@@ -57,7 +57,7 @@ File: Chartjs
             labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
             datasets: [
                 {
-                    label: "Points Earned",
+                    label: "XP Earned",
                     fill: false,
                     lineTension: 0.3,
                     backgroundColor: "#fff",

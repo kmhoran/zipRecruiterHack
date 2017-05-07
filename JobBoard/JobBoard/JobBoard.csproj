@@ -335,8 +335,8 @@
     <Content Include="ZipJobBoard\vendor\font-awesome\scss\_screen-reader.scss" />
     <Content Include="ZipJobBoard\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="ZipJobBoard\vendor\font-awesome\scss\_variables.scss" />
-    <Content Include="Views\Home\PublicProfile.cshtml" />
-    <Content Include="Views\Home\CompanyProfile.cshtml" />
+    <Content Include="Views\Home\PublicProfile_kevin.cshtml" />
+    <Content Include="Views\Home\CompanyProfile_kevin.cshtml" />
     <Content Include="Views\Home\UserDashboard.cshtml" />
     <Content Include="Views\Home\UserJobs.cshtml" />
     <Content Include="Views\Home\Skills.cshtml" />
@@ -344,6 +344,9 @@
     <Content Include="Views\Home\JobPostings.cshtml" />
     <Content Include="Views\Home\CodeTest.cshtml" />
     <Content Include="Views\Home\Success.cshtml" />
+    <Content Include="Views\Home\CompanyProfile.cshtml" />
+    <Content Include="Views\Home\Index_bad.cshtml" />
+    <Content Include="Views\Home\PublicProfile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
