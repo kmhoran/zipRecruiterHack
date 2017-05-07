@@ -196,13 +196,9 @@
     <Compile Include="Models\Responses\ItemsResponse.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Responses\SuccessResponse.cs" />
-    <Compile Include="Models\ViewModels\JobPostListVM.cs" />
     <Compile Include="Models\ViewModels\PublicProfileVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\PostService.cs" />
-    <Compile Include="Services\ProfileService.cs" />
-    <Compile Include="Services\SkillService.cs" />
-    <Compile Include="Services\UserService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -212,16 +208,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Scripts\Ace\ace.js" />
-    <Content Include="Scripts\Ace\show_own_source.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\ChartJs\chart.min.js" />
-    <Content Include="Scripts\ChartJs\jquery.chartjs.init.js" />
     <Content Include="ZipJobBoard\.gitignore" />
     <Content Include="ZipJobBoard\css\freelancer.css" />
     <Content Include="ZipJobBoard\css\freelancer.min.css" />
-    <Content Include="ZipJobBoard\css\jobBoard.css" />
     <Content Include="ZipJobBoard\gulpfile.js" />
     <Content Include="ZipJobBoard\img\portfolio\cabin.png" />
     <Content Include="ZipJobBoard\img\portfolio\cake.png" />
@@ -270,6 +261,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -291,7 +284,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Shared\_SeekerLayout.cshtml" />
+    <Content Include="Views\Shared\_JobsLayout.cshtml" />
     <Content Include="ZipJobBoard\less\freelancer.less" />
     <Content Include="ZipJobBoard\less\mixins.less" />
     <Content Include="ZipJobBoard\less\variables.less" />
@@ -335,18 +328,11 @@
     <Content Include="ZipJobBoard\vendor\font-awesome\scss\_screen-reader.scss" />
     <Content Include="ZipJobBoard\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="ZipJobBoard\vendor\font-awesome\scss\_variables.scss" />
-    <Content Include="Views\Home\PublicProfile_kevin.cshtml" />
-    <Content Include="Views\Home\CompanyProfile_kevin.cshtml" />
-    <Content Include="Views\Home\UserDashboard.cshtml" />
-    <Content Include="Views\Home\UserJobs.cshtml" />
-    <Content Include="Views\Home\Skills.cshtml" />
-    <Content Include="Views\Shared\_Companylayout.cshtml" />
-    <Content Include="Views\Home\JobPostings.cshtml" />
-    <Content Include="Views\Home\CodeTest.cshtml" />
-    <Content Include="Views\Home\Success.cshtml" />
-    <Content Include="Views\Home\CompanyProfile.cshtml" />
-    <Content Include="Views\Home\Index_bad.cshtml" />
     <Content Include="Views\Home\PublicProfile.cshtml" />
+    <Content Include="Views\Home\CompanyProfile.cshtml" />
+    <Content Include="Views\Home\UserDashboard.cshtml" />
+    <Content Include="Views\Home\Userjobs.cshtml" />
+    <Content Include="Views\Home\Skills.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
