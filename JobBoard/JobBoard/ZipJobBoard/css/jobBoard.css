@@ -1,0 +1,20 @@
+.codeSamples img {
+    border: solid 1px darkslategrey;
+}
+
+.codeSamples {
+    padding-top: 20px;
+}
+
+.codeSamples button {
+    margin: 10px;
+    float: right;
+}
+
+.codeSamples span {
+    color: grey;
+}
+
+.accolades img {
+    cursor: pointer;
+}
