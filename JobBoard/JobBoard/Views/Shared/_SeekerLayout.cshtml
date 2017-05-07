@@ -30,6 +30,19 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style>
+        body{
+            background-color: #eaeaea;
+        }
+        #body-wrapper{
+            border: 1px solid #f4f4f4;
+            margin: 0 2em 2em 2em;
+            border-radius: 20px;
+            padding: 2em 1em;
+            min-height: 500px;
+            background-color: #fff;
+        }
+    </style>
     @RenderSection("Meta", false)
 </head>
 
@@ -80,7 +93,10 @@
 
     <!-- Body -->
     <div style="position:relative;top:10em">
-        @RenderBody()
+        <div id="body-wrapper">
+            @RenderBody()
+        </div>
+        
     </div>
 
 

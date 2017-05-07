@@ -5,119 +5,371 @@
 }
 @section Meta{
     <style type="text/css" media="screen">
-    .ace_editor {
-        border: 1px solid lightgray;
-        margin: auto;
-        height: 200px;
-        width: 80%;
-    }
+        .ace_editor {
+            border: 1px solid lightgray;
+            margin: auto;
+            height: 200px;
+            width: 80%;
+        }
 
-    .scrollmargin {
-        height: 80px;
-        text-align: center;
-    }
-</style>
-    }
+        .scrollmargin {
+            height: 80px;
+            text-align: center;
+        }
 
-<div class="row" style="margin-left: 5em;">
-    <h2>Your Skills</h2>
-</div>
-<div class="col-md-6 skills">
-   
+        .content {
+            position: relative;
+            left: 5em;
+            margin-right: 10em;
+        }
 
-    <div class="panel panel-success">
-        <div class="panel-heading">
-            <img src="http://developrx.com/wp-content/uploads/2015/09/Unofficial_JavaScript_logo_2.svg_.png" />
-            <h4>Javascript | <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span> </h4>
-            <strong>Level 55</strong>
+        .your-skills {
+            display: block;
+        }
+
+            .your-skills .skill {
+                width: 100%;
+            }
+
+                .your-skills .skill:nth-child(even) {
+                    background-color: #f4f4f4;
+                }
+        /*.your-skills .skill div{
+            display: inline-block;
+
+        }
+        .your-skills .skill p{
+            display: inline-block;
+            /*margin: 0 1em;
+        }*/
+        .course-buttons {
+            text-align: center;
+            width: 100%;
+        }
+
+            .course-buttons button {
+                display: inline;
+                /*margin: 0 5em;*/
+            }
+            .shop h4{
+                display: inline;
+                margin: 2em 0.7em;
+            }
+    </style>
+}
+<div class="content">
+    <div class="row">
+        <h2>Skills</h2>
+        <hr />
+        <div class="col-md-5">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>Your Skills</h4>
+                </div>
+                <!-- /.panel-heading -->
+                <ul class="list-group your-skills">
+                    <li class="list-group-item skill">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="https://www.seeklogo.net/wp-content/uploads/2011/06/java-logo-vector.png" width="40px" height="40px">
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><p>Java</p></a>
+                            </div>
+                            <div class="col-md-3">
+                                <p>level 53</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p>5401 XP</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item skill">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="http://downloadicons.net/sites/default/files/sql-icon-13494.png" width="40px" height="40px">
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><p>SQL</p></a>
+                            </div>
+                            <div class="col-md-3">
+                                <p>level 32</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p>2486 XP</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item skill">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="http://devstickers.com/assets/img/pro/2p4i.png" width="40px" height="40px">
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><p>C#</p></a>
+                            </div>
+                            <div class="col-md-3">
+                                <p>level 31</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p>2210 XP</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item skill">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" width="40px" height="40px">
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><p>HTML</p></a>
+                            </div>
+                            <div class="col-md-3">
+                                <p>level 15</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p>1027 XP</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item skill">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="https://www.codementor.io/assets/page_img/learn-javascript.png" width="40px" height="40px">
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><p>JavaScript</p></a>
+                            </div>
+                            <div class="col-md-3">
+                                <p>level 12</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p>963 XP</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- /.list-group -->
+            </div>
+            <!-- /.panel -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>Your Courses</h4>
+                </div>
+                <!-- /.panel-Heading -->
+                <ul class="list-group your-skills">
+                    <li class="list-group-item skill">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="https://www.codementor.io/assets/page_img/learn-javascript.png" width="40px" height="40px">
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#"><p>JavaScript the Hard Way</p></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-3">
+                                <p style="font-size:14px"><strong>Progress:</strong> 2/15</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p style="font-size:14px">10675 likes</p>
+                            </div>
+                        </div>
+                        <div class="course-buttons">
+                            <button class="btn btn-success btn-block">Resume</button>
+                        </div>
+                    </li>
+                    <li class="list-group-item skill">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="https://www.seeklogo.net/wp-content/uploads/2011/06/java-logo-vector.png" width="40px" height="40px">
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#"><p>Java Jiu Jitsu</p></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-3">
+                                <p style="font-size:14px"><strong>Progress:</strong> 4/7</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p style="font-size:14px">4675 likes</p>
+                            </div>
+                        </div>
+                        <div class="course-buttons">
+                            <button class="btn btn-success btn-block">Resume</button>
+                        </div>
+                    </li>
+                    <li class="list-group-item skill">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="http://downloadicons.net/sites/default/files/sql-icon-13494.png" width="40px" height="40px">
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#"><p>SQL Essentials</p></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-3">
+                                <p style="font-size:14px"><strong>Progress:</strong> 5/5</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p style="font-size:14px">752 likes</p>
+                            </div>
+                        </div>
+                        <div class="course-buttons">
+                            <button class="btn btn-default btn-block">Leave a Review</button>
+                        </div>
+                    </li>
+                </ul>
+                <!-- /.list-group -->
+                <div class="panel-footer">
+                    <button class="btn btn-default">Add New Course</button>
+                </div>
+            </div>
+            <!-- /.panel -->
         </div>
-        <div class="panel-body">
-            <div class="courses">
-                <h5>Learn</h5>
-                Continue <a href="#"><strong>Javascript the Hard Way</strong></a>. (7/15)
+        <!-- /.col-md-6 -->
+        <div class="col-md-6 col-md-offset-1">
+            <div class="panel panel-info">
+                <div class="panel-heading shop">
+                    <h4><span class="fa fa-shopping-cart"></span></h4>
+                    <h4> Shop for Courses</h4>
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <form class="form-inline">
+                        <div class="form-group" style="width:100%">
+                            <div class="input-group" style="width:100%">
+                                <input type="text" class="form-control" placeholder="Find a Course">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-success" type="button">Search</button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.panel-body search -->
+                <ul class="list-group your-skills">
+                    <li class="list-group-item skill">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="https://www.seeklogo.net/wp-content/uploads/2011/06/java-logo-vector.png" width="40px" height="40px">
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#"><p>Advanced Java</p></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-3">
+                                <p style="font-size:14px">15 hours</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p style="font-size:14px">4675 likes</p>
+                            </div>
+                        </div>
+                        <div class="course-buttons">
+                            <button class="btn btn-info btn-block">Enroll Now</button>
+                        </div>
+                    </li>
+                    <li class="list-group-item skill">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="http://devstickers.com/assets/img/pro/2p4i.png" width="40px" height="40px">
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#"><p>Be Sharp C#</p></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-3">
+                                <p style="font-size:14px">20 hours</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p style="font-size:14px">5379 likes</p>
+                            </div>
+                        </div>
+                        <div class="course-buttons">
+                            <button class="btn btn-info btn-block">Enroll Now</button>
+                        </div>
+                    </li>
+                    <li class="list-group-item skill">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="https://www.codementor.io/assets/page_img/learn-javascript.png" width="40px" height="40px">
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#"><p>Code Like a Pro: JS</p></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-3">
+                                <p style="font-size:14px">7 hours</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p style="font-size:14px">12586 likes</p>
+                            </div>
+                        </div>
+                        <div class="course-buttons">
+                            <button class="btn btn-info btn-block">Enroll Now</button>
+                        </div>
+                    </li>
+                    <li class="list-group-item skill">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="http://downloadicons.net/sites/default/files/sql-icon-13494.png" width="40px" height="40px">
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#"><p>SQL Voodoo</p></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-3">
+                                <p style="font-size:14px">7 hours</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p style="font-size:14px">3458 likes</p>
+                            </div>
+                        </div>
+                        <div class="course-buttons">
+                            <button class="btn btn-info btn-block">Enroll Now</button>
+                        </div>
+                    </li>
+                    <li class="list-group-item skill">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="https://www.codementor.io/assets/page_img/learn-javascript.png" width="40px" height="40px">
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#"><p>JavaScript Essentials</p></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-3">
+                                <p style="font-size:14px">17 hours</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p style="font-size:14px">70536 likes</p>
+                            </div>
+                        </div>
+                        <div class="course-buttons">
+                            <button class="btn btn-info btn-block">Enroll Now</button>
+                        </div>
+                    </li>
+                </ul>
+                <!-- /.list-group -->
             </div>
-            <hr />
-            <div class="jobs">
-                <h5>Work</h5>
-                Find Javascript jobs in <a href="#"><strong>Los Angeles</strong></a>.
-            </div>
-            <hr />
-            <div>
-                <h5>Connect</h5>
-                Check out the latest posts in the <a href="#">JS developers</a> forum.
-            </div>
-
+            <!-- /.panel -->
         </div>
-        <!-- /.panel-body -->
+        <!-- /.col-md-6 -->
     </div>
-    <!-- /.panel -->
-</div>
-<!-- /.col-md-6 -->
-
-<div class="col-md-6">
-    <div class="panel panel-success">
-        <div class="panel-heading">
-            <img src="https://raw.githubusercontent.com/abramz/angular-hover-spy-example/master/app/images/angularjs-logo.png" />
-            <h4>AngularJS | <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></h4>
-            <strong>Level 15</strong>
-        </div>
-        <div class="panel-body">
-            <div class="courses">
-                <h5>Learn</h5>
-                Continue <a href="#"><strong>Angular for Dummies</strong></a>. (3/10)
-            </div>
-            <hr />
-            <div class="jobs">
-                <h5>Work</h5>
-                Find AngularJS jobs in <a href="#"><strong>Los Angeles</strong></a>.
-            </div>
-            <hr />
-            <div>
-                <h5>Connect</h5>
-                Check out the latest posts in the <a href="#">Angular4!!!</a> forum.
-            </div>
-
-        </div>
-        <!-- /.panel-body -->
-    </div>
-    <!-- /.panel -->
-
-</div>
-<!-- /.col-md-6 -->
-
-
-<div class="col-md-6">
-    <div class="panel panel-success">
-        <div class="panel-heading">
-            <img src="https://video-react.js.org/assets/logo.png" />
-            <h4>React | <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></h4>
-            <strong>Level 20</strong>
-        </div>
-        <div class="panel-body">
-            <div class="courses">
-                <h5>Learn</h5>
-                Continue <a href="#"><strong>React Essentials</strong></a>. (5/10)
-            </div>
-            <hr />
-            <div class="jobs">
-                <h5>Work</h5>
-                Find React jobs in <a href="#"><strong>Los Angeles</strong></a>.
-            </div>
-            <hr />
-            <div>
-                <h5>Connect</h5>
-                Check out the latest posts in the <a href="#">ReactJS</a> forum.
-            </div>
-
-        </div>
-        <!-- /.panel-body -->
-    </div>
-    <!-- /.panel -->
+    <!--  /.row -->
 
 </div>
 <!-- /.col-md-6 -->
 @section Scripts{
-    
-    
-    }
+
+
+}
 
