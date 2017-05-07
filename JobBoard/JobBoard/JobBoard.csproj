@@ -229,6 +229,9 @@
     <Content Include="ZipJobBoard\img\portfolio\safe.png" />
     <Content Include="ZipJobBoard\img\portfolio\submarine.png" />
     <Content Include="ZipJobBoard\img\profile.png" />
+    <Content Include="ZipJobBoard\img\projectpre.png" />
+    <Content Include="ZipJobBoard\img\projectprefav.png" />
+    <Content Include="ZipJobBoard\img\projpre.png" />
     <Content Include="ZipJobBoard\index.html" />
     <Content Include="ZipJobBoard\js\contact_me.js" />
     <Content Include="ZipJobBoard\js\freelancer.js" />
